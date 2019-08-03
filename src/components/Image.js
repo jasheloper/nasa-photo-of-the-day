@@ -7,7 +7,7 @@ export function Image(props) {
 
     return (
 
-        <img src={props.imgURL} alt="x" style={{ width: "200px", height: "200px"}}></img>
+        <img src={props.imgURL} alt="x" style={{ width: "310px", height: "310px"}}></img>
 
     )
 

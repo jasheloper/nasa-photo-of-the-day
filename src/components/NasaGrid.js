@@ -1,6 +1,45 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Image } from "./Image";
+import styled from "styled-components";
+
+
+const ContainerDiv = styled.div`
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 50%;
+  font-family: sans-serif;
+  text-align: center;
+  background-color: #212F3C;
+  box-sizing: border-box;
+  padding: 1em;
+  border-radius: 1em;
+  line-height: 2em;
+  font-family: verdana;
+`;
+
+const Title = styled.h1`
+  color: #FFC300;
+`;
+
+const Date = styled.h2`
+  color: #CCD1D1;
+`;
+
+const Explain = styled.p`
+  color: #F0F3F4;
+  font-size: 13px;
+`;
+
+const Copyright = styled.h4`
+font-size: 30px;
+  color: #F5B041;
+`;
+
+
+
+
 
 
 function NasaGrid() {
@@ -36,10 +75,10 @@ function NasaGrid() {
 
     return (
 
-      <div>
+      <ContainerDiv>
 
-                <h1>{title}</h1>
-                <h2>{date}</h2>
+                <Title>{title}</Title>
+                <Date>{date}</Date>
 
 
 
@@ -51,17 +90,17 @@ function NasaGrid() {
 
 
 
-                <p>{explain}</p>
+                <Explain>{explain}</Explain>
 
 
                 <div>
 
-                    <h4>{copyright}</h4>
+                    <Copyright>{copyright}</Copyright>
 
                 </div>
 
 
-      </div>
+      </ContainerDiv>
     )
 
 
